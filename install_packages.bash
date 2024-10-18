@@ -21,7 +21,7 @@ mkdir -p $HOME/raspicat_ws/src && cd $HOME/raspicat_ws/src
 git clone -b ros2 https://github.com/rt-net/raspicat_ros.git
 #git clone -b mugimaru-2024/ros2 https://github.com/nacky823/raspicat_description.git
 #git clone -b ros2 https://github.com/rt-net/raspicat_sim.git
-git clone -b feat/gnss https://github.com/makotoyoshigoe/raspicat_description.git
+git clone -b feat/gnss git@github.com:makotoyoshigoe/raspicat_description.git
 git clone -b feat/gnss https://github.com/makotoyoshigoe/raspicat_sim.git
 ./raspicat_sim/raspicat_gazebo/scripts/download_gazebo_models.sh
 cd $HOME/raspicat_ws
