@@ -28,6 +28,7 @@
     colcon build --symlink-install
     
     # ws_livox
-    .$HOME/ws_livox/src/build.sh humble
+    cd ~/ws_livox/src/livox_ros_driver2 && ./build.sh humble
+    cd ~/
     source ~/.bashrc
     ```
