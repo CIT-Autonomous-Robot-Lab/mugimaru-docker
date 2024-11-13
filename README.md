@@ -1,28 +1,33 @@
 # mugimaru-docker
 
 ## Installation
-+ Build command
-    ```
-    docker build --build-arg USERNAME=$USER \
-    --build-arg UID_AND_GID=$(id -u $USER) \
-    -t mugimaru:latest .
-    ```
-+ Run command
-    ```
-    docker run -it --rm --gpus all \
-    --privileged \
-    --net=host \
-    --ipc=host \
-    --env="DISPLAY" \
-    --env="QT_X11_NO_MITSHM=1" \
-    --mount type=bind,source=/dev,target=/dev \
-    --mount type=bind,source=/home/$USER/.ssh,target=/home/$USER/.ssh \
-    --runtime=nvidia \
-    --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-    -v /var/run/NetworkManager:/var/run/NetworkManager \
-    mugimaru:latest
-    ```
-+ Run a script in a container
++ Clone packages
     ```
     ./install_packages.bash
+    ```
++ Docker image build command
+    ```
+    ./build.sh
+    ```
++ Run container command
+    ```
+    ./run_container
+    ```
++ Build workspaces
+    ```
+    # nav2_ws
+    cd ~/nav2_ws
+    rosdep update
+    rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO 
+    colcon build --symlink-install --packages-select nav2_msgs nav2_rviz_plugins nav2_waypoint_follower
+    
+    # ros2_ws
+    cd ~/ros2_ws 
+    rosdep update
+    rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO 
+    colcon build --symlink-install
+    
+    # ws_livox
+    .$HOME/ws_livox/src/build.sh humble
+    source ~/.bashrc
     ```
