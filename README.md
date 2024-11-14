@@ -1,7 +1,12 @@
 # mugimaru-docker
 
 ## Installation
-+ Clone packages
++ Clone this package
+    ```
+    cd ~/
+    git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/mugimaru-docker.git
+    ```
++ Clone requirements packages
     ```
     ./install_packages.bash
     ```
