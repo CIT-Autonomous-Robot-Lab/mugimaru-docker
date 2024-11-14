@@ -22,7 +22,7 @@
     ```
     ./run_container
     ```
-+ Build workspaces
++ Build workspaces (In container)
     ```
     # nav2_ws
     cd ~/nav2_ws
