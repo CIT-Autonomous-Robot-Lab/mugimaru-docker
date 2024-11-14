@@ -8,6 +8,7 @@
     ```
 + Clone requirements packages
     ```
+    cd ~/mugimaru-docker/
     ./install_packages.bash
     ```
 + Create profile for livox (If you don't have a profile)
