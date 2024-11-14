@@ -5,6 +5,10 @@
     ```
     ./install_packages.bash
     ```
++ Create profile for livox (If you don't have a profile)
+    ```
+    bash $HOME/mugimaru-docker/ws_livox/src/livox_ros_driver2/scripts/livox-raspi_setup_profile.sh
+    ```
 + Docker image build command
     ```
     ./build.sh
