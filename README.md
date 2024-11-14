@@ -41,3 +41,12 @@
     cd ~/
     source ~/.bashrc
     ```
++ Navigation (Tsukuba)
+    + Terminal1
+        ```
+        ros2 launch raspicat_navigation livox_2d.launch.py
+        ```
+    + Terminal2
+        ```
+        ros2 launch raspicat_navigation tsukuba.launch.py
+        ```
