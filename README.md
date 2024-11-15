@@ -1,6 +1,7 @@
 # mugimaru-docker
 
 ## Installation
+### Local PC
 + Clone this package
     ```
     cd ~/
@@ -23,18 +24,19 @@
     ```
     ./run_container
     ```
-+ Build workspaces (In container)
+### Docker container
++ Build workspaces
     ```
     # nav2_ws
     cd ~/nav2_ws
     rosdep update
-    rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO 
+    rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
     colcon build --symlink-install --packages-select nav2_msgs nav2_rviz_plugins nav2_waypoint_follower
     
     # ros2_ws
     cd ~/ros2_ws 
     rosdep update
-    rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO 
+    rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
     colcon build --symlink-install
     
     # ws_livox
@@ -42,12 +44,32 @@
     cd ~/
     source ~/.bashrc
     ```
-+ Navigation (Tsukuba)
-    + Terminal1
-        ```
-        ros2 launch raspicat_navigation livox_2d.launch.py
-        ```
-    + Terminal2
-        ```
-        ros2 launch raspicat_navigation tsukuba.launch.py
-        ```
+## Navigation
+### Simulation (Tsudanuma campus)
++ Terminal1
+    ```
+    ros2 launch raspicat_gazebo raspicat_with_tsudanuma_campus.launch.py
+    ```
++ Terminal2
+    ```
+    ros2 launch raspicat_navigation tsudanuma.launch.py
+    ```
+### Actual Robot
++ Terminal1
+   ```
+   ros2 launch raspicat_gazebo livox_2d.launch.py
+   ```
++ Terminal2
+   + Tsudanuma building 2 19th floor
+    ```
+    ros2 launch raspicat_navigation tsudanuma_2_19.launch.py
+    ```
+   + Tsudanuma campus
+   ```
+   ros2 launch raspicat_navigation tsudanuma_campus.launch.py
+   ```
+   + Tsukuba
+   ```
+   ros2 launch raspicat_navigation tsukuba.launch.py
+   ```
+    
