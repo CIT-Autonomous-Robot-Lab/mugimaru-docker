@@ -29,14 +29,14 @@
     ```
     # nav2_ws
     cd ~/nav2_ws
-    rosdep update
-    rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
+    # rosdep update
+    # rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
     colcon build --symlink-install --packages-select nav2_msgs nav2_rviz_plugins nav2_waypoint_follower
     
     # ros2_ws
     cd ~/ros2_ws 
-    rosdep update
-    rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
+    # rosdep update
+    # rosdep install -y --from-paths src/* --ignore-src --rosdistro $ROS_DISTRO 
     colcon build --symlink-install
     
     # ws_livox
@@ -52,7 +52,7 @@
     ```
 + Terminal2
     ```
-    ros2 launch raspicat_navigation tsudanuma.launch.py
+    ros2 launch raspicat_navigation tsudanuma_campus.launch.py
     ```
 ### Actual Robot
 + Terminal1
@@ -72,4 +72,4 @@
    ```
    ros2 launch raspicat_navigation tsukuba.launch.py
    ```
-    
+   
