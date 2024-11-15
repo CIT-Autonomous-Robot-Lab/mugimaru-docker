@@ -9,7 +9,7 @@ git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/raspicat_desc
 git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/raspicat_sim.git
 git clone -b master git@github.com:CIT-Autonomous-Robot-Lab/raspimouse2.git
 git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/wall_tracking.git
-git clone -b humble git@github.com:nacky823/pointcloud_to_laserscan.git
+git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/pointcloud_to_laserscan.git
 
 mkdir -p ~/mugimaru-docker/ws_livox/src
 cd ~/mugimaru-docker/ws_livox/src
