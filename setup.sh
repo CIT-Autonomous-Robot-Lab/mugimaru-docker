@@ -59,4 +59,4 @@ cd && rm -rf Livox-SDK2
 echo "source ~/.setup.bash" >> $HOME/.bashrc
 
 sudo apt update 
-sudo apt install -y ros-humble-nav2*
+sudo apt install -y ros-humble-nav2-*
