@@ -25,5 +25,4 @@ mkdir -p ~/mugimaru-docker/gnss_driver_ws/src
 cd ~/mugimaru-docker/gnss_driver_ws/src
 git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/nmea_navsat_driver.git
 git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/ros2-ublox-zedf9p.git
-cd 
-cd 
+cd ~/
