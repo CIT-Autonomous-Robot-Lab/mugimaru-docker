@@ -72,4 +72,7 @@
    ```
    ros2 launch raspicat_navigation tsukuba.launch.py
    ```
+## Memo
+- 上記の手順以降で、イメージに対して行った変更
+    - gnss_driver_ws以下でrosdep install
    
