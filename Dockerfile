@@ -47,8 +47,8 @@ RUN echo $TZ > /etc/timezone && \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-#COPY gnss_driver_ws/ /home/$USERNAME/gnss_driver_ws/
 RUN cd ~/mugimaru-docker/
+COPY gnss_driver_ws/ /home/$USERNAME/gnss_driver_ws/
 COPY setup.sh /home/$USERNAME/
 # RUN . /home/$USERNAME/setup.sh
 
