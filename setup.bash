@@ -6,3 +6,5 @@ mkdir -p .gazebo/
 cp -r ~/ros2_ws/src/raspicat_sim/raspicat_gazebo/models ~/.gazebo
 sudo chmod 666 /dev/ttyACM0
 source ~/gnss_driver_ws/install/setup.bash
+alias rtk-sanbu="str2str -in ntrip://:@ntrip1.bizstation.jp:2101/0C06E596#rtcm3 -out serial://ttyACM0:115200"
+alias rtk-tsukuba="str2str -in ntrip://:@ntrip1.bizstation.jp:2101/981D3822#rtcm3 -out serial://ttyACM0:115200"
