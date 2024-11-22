@@ -17,5 +17,7 @@ jobs:
         run: |
           cd ~/
           git clone -b mugimaru-2024 https://github.com/CIT-Autonomous-Robot-Lab/mugimaru-docker.git
-
-
+      - name: Clone requirements packages
+        run: |
+          cd ~/mugimaru-docker/
+          ./test/install_packages.bash
