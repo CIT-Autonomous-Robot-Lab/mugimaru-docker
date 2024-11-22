@@ -48,6 +48,7 @@ USER $USERNAME
 WORKDIR /home/$USERNAME
 
 COPY setup.sh /home/$USERNAME/
+COPY install_packages.bash /home/$USERNAME/
 RUN . /home/$USERNAME/setup.sh
 
 CMD ["/bin/bash"]
