@@ -60,3 +60,6 @@ echo "source ~/.setup.bash" >> $HOME/.bashrc
 
 sudo apt update 
 sudo apt install -y ros-humble-nav2-* rtklib
+
+cd ~/gnss_driver_ws
+rosdep install -i -r --from-path src/*
