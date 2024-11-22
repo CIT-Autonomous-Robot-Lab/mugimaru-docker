@@ -47,7 +47,8 @@ RUN echo $TZ > /etc/timezone && \
 USER $USERNAME
 WORKDIR /home/$USERNAME
 
-COPY gnss_driver_ws/ /home/$USERNAME/gnss_driver_ws/
+# COPY gnss_driver_ws/ /home/$USERNAME/gnss_driver_ws/
+RUN pwd
 COPY setup.sh /home/$USERNAME/
 # RUN . /home/$USERNAME/setup.sh
 
