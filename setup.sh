@@ -61,5 +61,9 @@ echo "source ~/.setup.bash" >> $HOME/.bashrc
 sudo apt update 
 sudo apt install -y ros-humble-nav2-* rtklib
 
-cd ~/gnss_driver_ws
-rosdep install -i -r --from-path src/*
+./install_packages.bash
+rosdep install -i -y -r --from-path ~/mugimaru-docker/ros2_ws/src/*
+rosdep install -i -y -r --from-path ~/mugimaru-docker/ws_livox/src/*
+rosdep install -i -y -r --from-path ~/mugimaru-docker/nav2_ws/src/*
+rosdep install -i -y -r --from-path ~/mugimaru-docker/gnss_driver_ws/src/*
+rm -rf mugimaru-docker
