@@ -1,5 +1,5 @@
 # mugimaru-docker
-
+![docker-image-build-test](https://github.com/CIT-Autonomous-Robot-Lab/mugimaru-docker/actions/workflows/build_test.yml/badge.svg)
 ## Installation
 ### Local PC
 + Clone this package
