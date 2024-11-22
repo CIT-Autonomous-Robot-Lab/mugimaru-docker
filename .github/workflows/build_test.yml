@@ -21,4 +21,6 @@ jobs:
         run: |
           sed -i "s;git@github.com:;https://github.com/;" install_packages.bash 
           ./install_packages.bash
+      - name: Docker image build
+        run: |
           ./build.sh
