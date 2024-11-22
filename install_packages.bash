@@ -20,5 +20,10 @@ cd ~/mugimaru-docker/nav2_ws/src
 git clone -b feat/tsukuba-challenge-2023-ex git@github.com:CIT-Autonomous-Robot-Lab/navigation2.git
 cd navigation2
 git reset b893e538ffc9667bf0a3ab0c99070439f5521718
-cd 
 
+mkdir -p ~/mugimaru-docker/gnss_driver_ws/src
+cd ~/mugimaru-docker/gnss_driver_ws/src
+git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/nmea_navsat_driver.git
+git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/ros2-ublox-zedf9p.git
+cd 
+cd 
