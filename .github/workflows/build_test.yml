@@ -1,0 +1,21 @@
+name: docker image build
+
+on:
+  push:
+    paths-ignore:
+      - LICENSE
+      - setup.bash
+      - README.md 
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Clone this repository
+        run: |
+          cd ~/
+          git clone -b mugimaru-2024 git@github.com:CIT-Autonomous-Robot-Lab/mugimaru-docker.git
+
+
