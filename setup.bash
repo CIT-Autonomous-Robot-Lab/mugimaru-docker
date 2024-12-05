@@ -8,3 +8,6 @@ sudo chmod 666 /dev/ttyACM0
 source ~/gnss_driver_ws/install/setup.bash
 alias rtk-sanbu="str2str -in ntrip://:@ntrip1.bizstation.jp:2101/0C06E596#rtcm3 -out serial://ttyACM0:115200"
 alias rtk-tsukuba="str2str -in ntrip://:@ntrip1.bizstation.jp:2101/981D3822#rtcm3 -out serial://ttyACM0:115200"
+alias right-start="bash $HOME/ros2_ws/src/raspicat_slam_navigation/raspicat_navigation/scripts/right_start_init.bash"
+alias left-start="bash $HOME/ros2_ws/src/raspicat_slam_navigation/raspicat_navigation/scripts/left_start_init.bash"
+alias tsukuba-launch="ros2 launch raspicat_navigation tsukuba.launch.py"
