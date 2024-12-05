@@ -11,3 +11,4 @@ alias rtk-tsukuba="str2str -in ntrip://:@ntrip1.bizstation.jp:2101/981D3822#rtcm
 alias right-start="bash $HOME/ros2_ws/src/raspicat_slam_navigation/raspicat_navigation/scripts/right_start_init.bash"
 alias left-start="bash $HOME/ros2_ws/src/raspicat_slam_navigation/raspicat_navigation/scripts/left_start_init.bash"
 alias tsukuba-launch="ros2 launch raspicat_navigation tsukuba.launch.py"
+alias livox-launch="ros2 launch raspicat_navigation livox_2d.launch.py"
