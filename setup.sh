@@ -67,3 +67,8 @@ rosdep install -i -y -r --from-path ~/mugimaru-docker/ws_livox/src/*
 rosdep install -i -y -r --from-path ~/mugimaru-docker/nav2_ws/src/*
 rosdep install -i -y -r --from-path ~/mugimaru-docker/gnss_driver_ws/src/*
 rm -rf mugimaru-docker
+
+curl -LJO https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+sudo mv yq_linux_amd64 /usr/local/bin/yq
+sudo chmod a+x /usr/local/bin/yq
+
